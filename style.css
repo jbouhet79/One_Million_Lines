@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    text-align: center;
+    background-color: black;
+    background: url(images/top-logo.png) center;
+
+    
+}
+
+nav {
+    display: flex;
+    padding: 0 20px;
+    
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+
+.top {
+    height: 70vh;
+    text-align: center;
+    background-image: url(./images/hero-image.jpg);
+    align-items: center;
+    color: white;
+    font-family: "fonts/glyphicons-halflings-regular.ttf", Arial;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.section1 {
+    height: 200px;
+    background: white;
+}
+
+.section2 {
+    height: 200px;
+    background: rgb(211, 211, 211);
+}
+
+.footer {
+    height: 100px;
+    background: #b32400;
+}
