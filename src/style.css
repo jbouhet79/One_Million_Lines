@@ -20,14 +20,12 @@ header .banner {
     display: flex;
     justify-content: flex-start;
     height: 50%;
-    flex-direction: column-reverse;
-
 }
 
 nav {
     display: flex;
     position: relative;
-    right: 10px;
+    right: 100px;
     padding: 9px 0;
     margin: 5px;
     text-align: right;
@@ -55,6 +53,7 @@ a {
     height: 80vh;
     text-align: center;
     background-image: url(./images/hero-image.jpg);
+    width: auto;
     align-items: center;
     color: white;
     font-family: "fonts/glyphicons-halflings-regular.ttf", Arial;
@@ -148,7 +147,7 @@ h3 {
     padding-top: 0;
     padding-bottom: 20px;
     font-family: helvetica;
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     text-align: center;
 }
@@ -224,13 +223,6 @@ section.gets .get-container .get {
     box-sizing: border-box;
 }
 
-/* @media (max-width: 900px) {
-    section.gets .get-container .get {
-        flex-basis: calc(50% - 20px);
-    }
-} */
-
-
 .footer {
     background: #b32400;
     padding-bottom: 50px;
@@ -241,3 +233,27 @@ section.gets .get-container .get {
     padding-top: 150px;
     padding-left: 80px;
 }
+
+/* Media Queries */
+  
+  /* Pour les écrans jusqu'à 900px de large */
+  @media (max-width: 900px) {
+    section .get-container .get {
+        flex-basis: calc(50% - 20px); /* Ajustez le 20px si votre gap est différent */
+    }
+  }
+  
+  /* Pour les écrans jusqu'à 600px de large */
+  @media (max-width: 600px) {
+    section .get-container {  /* modif pour affichage colonne */
+      flex-direction: column;
+
+    }
+    section .get-container .get {
+        flex-basis: 100%;
+    }
+
+    .footer img {
+        width: auto ;
+    }
+  }
