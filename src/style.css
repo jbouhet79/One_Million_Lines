@@ -157,6 +157,7 @@ h3 {
 }
 
 .button-gets {
+    width: 100px;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
 	background-color:#ffffff;
@@ -186,6 +187,7 @@ h3 {
 }
 
 .get img {
+    width: 80px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
